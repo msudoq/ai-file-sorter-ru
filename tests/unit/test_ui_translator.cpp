@@ -187,6 +187,8 @@ struct UiTranslatorTestHarness {
         turkish_action->setData(static_cast<int>(Language::Turkish));
         korean_action->setCheckable(true);
         korean_action->setData(static_cast<int>(Language::Korean));
+        russian_action->setCheckable(true);
+        russian_action->setData(static_cast<int>(Language::Russian));
         language_group->addAction(english_action);
         language_group->addAction(dutch_action);
         language_group->addAction(french_action);
