@@ -2654,6 +2654,11 @@ Aggiorna per continuare. Se scegli di uscire, l&apos;applicazione verrà chiusa.
         <translation>&amp;Coreano</translation>
     </message>
     <message>
+        <location filename="../../lib/UiTranslator.cpp" line="93"/>
+        <source>&amp;Russian</source>
+        <translation>&amp;Russo</translation>
+    </message>
+    <message>
         <location filename="../../lib/UiTranslator.cpp" line="85"/>
         <source>&amp;Swedish</source>
         <translation>&amp;Svedese</translation>

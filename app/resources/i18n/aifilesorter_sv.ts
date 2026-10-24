@@ -2652,6 +2652,11 @@ Uppdatera för att fortsätta. Om du väljer att avsluta stängs applikationen.<
         <translation>&amp;koreanska</translation>
     </message>
     <message>
+        <location filename="../../lib/UiTranslator.cpp" line="93"/>
+        <source>&amp;Russian</source>
+        <translation>&amp;ryska</translation>
+    </message>
+    <message>
         <location filename="../../lib/UiTranslator.cpp" line="94"/>
         <source>&amp;About AI File Sorter</source>
         <translation>&amp;Om AI File Sorter</translation>

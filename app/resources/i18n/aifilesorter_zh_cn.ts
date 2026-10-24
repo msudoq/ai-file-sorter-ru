@@ -2652,6 +2652,11 @@ Please update to continue. If you choose to quit, the application will close.</s
         <translation>&amp;韩国人</translation>
     </message>
     <message>
+        <location filename="../../lib/UiTranslator.cpp" line="93"/>
+        <source>&amp;Russian</source>
+        <translation>&amp;俄语</translation>
+    </message>
+    <message>
         <location filename="../../lib/UiTranslator.cpp" line="94"/>
         <source>&amp;About AI File Sorter</source>
         <translation>&amp;关于 AI 文件分类器</translation>

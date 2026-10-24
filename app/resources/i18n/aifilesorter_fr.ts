@@ -2654,6 +2654,11 @@ Veuillez mettre à jour pour continuer. Si vous choisissez de quitter, l&apos;ap
         <translation>&amp;Coréen</translation>
     </message>
     <message>
+        <location filename="../../lib/UiTranslator.cpp" line="93"/>
+        <source>&amp;Russian</source>
+        <translation>&amp;Russe</translation>
+    </message>
+    <message>
         <location filename="../../lib/UiTranslator.cpp" line="85"/>
         <source>&amp;Swedish</source>
         <translation>&amp;Suédois</translation>

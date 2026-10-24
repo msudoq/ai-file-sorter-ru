@@ -2652,6 +2652,11 @@ Vinsamlegast uppfærðu til að halda áfram. Ef þú velur að hætta mun forri
         <translation>&amp;kóreska</translation>
     </message>
     <message>
+        <location filename="../../lib/UiTranslator.cpp" line="93"/>
+        <source>&amp;Russian</source>
+        <translation>&amp;rússneska</translation>
+    </message>
+    <message>
         <location filename="../../lib/UiTranslator.cpp" line="94"/>
         <source>&amp;About AI File Sorter</source>
         <translation>&amp;Um AI File Sorter</translation>

@@ -2654,6 +2654,11 @@ Bitte aktualisieren Sie, um fortzufahren. Wenn Sie Beenden wählen, wird die Anw
         <translation>&amp;Koreanisch</translation>
     </message>
     <message>
+        <location filename="../../lib/UiTranslator.cpp" line="93"/>
+        <source>&amp;Russian</source>
+        <translation>&amp;Russisch</translation>
+    </message>
+    <message>
         <location filename="../../lib/UiTranslator.cpp" line="85"/>
         <source>&amp;Swedish</source>
         <translation>&amp;Schwedisch</translation>

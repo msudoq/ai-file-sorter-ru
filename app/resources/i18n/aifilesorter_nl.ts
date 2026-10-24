@@ -2654,6 +2654,11 @@ Werk bij om door te gaan. Als u ervoor kiest af te sluiten, wordt de toepassing 
         <translation>&amp;Koreaans</translation>
     </message>
     <message>
+        <location filename="../../lib/UiTranslator.cpp" line="93"/>
+        <source>&amp;Russian</source>
+        <translation>&amp;Russisch</translation>
+    </message>
+    <message>
         <location filename="../../lib/UiTranslator.cpp" line="85"/>
         <source>&amp;Swedish</source>
         <translation>&amp;Zweeds</translation>

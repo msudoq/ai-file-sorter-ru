@@ -2654,6 +2654,11 @@ Please update to continue. If you choose to quit, the application will close.</s
         <translation>&amp;한국어</translation>
     </message>
     <message>
+        <location filename="../../lib/UiTranslator.cpp" line="93"/>
+        <source>&amp;Russian</source>
+        <translation>&amp;러시아어</translation>
+    </message>
+    <message>
         <location filename="../../lib/UiTranslator.cpp" line="85"/>
         <source>&amp;Swedish</source>
         <translation>&amp;스웨덴어</translation>

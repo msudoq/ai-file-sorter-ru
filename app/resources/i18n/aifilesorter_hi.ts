@@ -2966,6 +2966,11 @@ Please update to continue. If you choose to quit, the application will close.</s
         <translation>&amp;कोरियाई</translation>
     </message>
     <message>
+        <location filename="../../lib/UiTranslator.cpp" line="93"/>
+        <source>&amp;Russian</source>
+        <translation>&amp;रूसी</translation>
+    </message>
+    <message>
         <location filename="../../lib/UiTranslator.cpp" line="85"/>
         <source>&amp;Swedish</source>
         <translation>&amp;स्वीडिश</translation>

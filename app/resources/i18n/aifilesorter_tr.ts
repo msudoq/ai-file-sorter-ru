@@ -2654,6 +2654,11 @@ Devam etmek için lütfen güncelleyin. Çıkmayı seçerseniz uygulama kapanaca
         <translation>&amp;Korece</translation>
     </message>
     <message>
+        <location filename="../../lib/UiTranslator.cpp" line="93"/>
+        <source>&amp;Russian</source>
+        <translation>&amp;Rusça</translation>
+    </message>
+    <message>
         <location filename="../../lib/UiTranslator.cpp" line="85"/>
         <source>&amp;Swedish</source>
         <translation>&amp;İsveççe</translation>
