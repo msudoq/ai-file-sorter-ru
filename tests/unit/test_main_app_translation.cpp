@@ -41,7 +41,8 @@ TEST_CASE("MainApp retranslate reflects language changes") {
         {Language::Dutch, QStringLiteral("Map analyseren"), QStringLiteral("Map:")},
         {Language::Turkish, QStringLiteral("Klasörü analiz et"), QStringLiteral("Klasör:")},
         {Language::Korean, QStringLiteral("폴더 분석"), QStringLiteral("폴더:")},
-        {Language::SimplifiedChinese, QStringLiteral("分析文件夹"), QStringLiteral("文件夹：")}
+        {Language::SimplifiedChinese, QStringLiteral("分析文件夹"), QStringLiteral("文件夹：")},
+        {Language::Russian, QStringLiteral("Анализировать папку"), QStringLiteral("Папка:")}
     };
 
     for (const auto& entry : expected) {
@@ -226,7 +227,17 @@ TEST_CASE("Top-level menu titles are translated for all supported UI languages")
          QStringLiteral("&开发"),
          QStringLiteral("&测试"),
          QStringLiteral("&界面语言"),
-         QStringLiteral("&类别语言")}
+         QStringLiteral("&类别语言")},
+        {Language::Russian,
+         QStringLiteral("&Файл"),
+         QStringLiteral("&Правка"),
+         QStringLiteral("&Вид"),
+         QStringLiteral("&Настройки"),
+         QStringLiteral("&Плагины"),
+         QStringLiteral("&Разработка"),
+         QStringLiteral("&Тесты"),
+         QStringLiteral("&Язык интерфейса"),
+         QStringLiteral("&Язык категорий")}
     };
 
     for (const auto& entry : expected) {
@@ -403,7 +414,15 @@ TEST_CASE("Settings menu actions are translated for all supported UI languages")
          QStringLiteral("&界面语言"),
          QStringLiteral("&类别语言"),
          QStringLiteral("重置已学习的行为…"),
-         QStringLiteral("清除缓存…")}
+         QStringLiteral("清除缓存…")},
+        {Language::Russian,
+         QStringLiteral("Проверка совместимости системы…"),
+         QStringLiteral("Выбрать &LLM…"),
+         QStringLiteral("Управление белыми списками категорий…"),
+         QStringLiteral("&Язык интерфейса"),
+         QStringLiteral("&Язык категорий"),
+         QStringLiteral("Сбросить обученное поведение…"),
+         QStringLiteral("Очистить кэш…")}
     };
 
     for (const auto& entry : expected) {
@@ -641,7 +660,19 @@ TEST_CASE("Updater strings are translated for all supported UI languages") {
          QStringLiteral("安装程序已就绪"),
          QStringLiteral("退出应用程序并启动安装程序进行更新"),
          QStringLiteral("退出并启动安装程序"),
-         QStringLiteral("版本 %1 中的新增内容：")}
+         QStringLiteral("版本 %1 中的新增内容：")},
+        {Language::Russian,
+         QStringLiteral("Сбой обновления"),
+         QStringLiteral("Обновить вручную"),
+         QStringLiteral("Не удалось подготовить установщик обновления.\n%1"),
+         QStringLiteral("Не удалось запустить установщик."),
+         QStringLiteral("Для этого обновления нет доступного файла загрузки."),
+         QStringLiteral("Загрузка обновления"),
+         QStringLiteral("Загрузка установщика обновления..."),
+         QStringLiteral("Установщик готов"),
+         QStringLiteral("Закройте приложение и запустите установщик для обновления"),
+         QStringLiteral("Закрыть и запустить установщик"),
+         QStringLiteral("Что нового в версии %1:")}
     };
 
     for (const auto& entry : expected) {
@@ -769,6 +800,15 @@ TEST_CASE("Quick Start guide content follows the selected app language")
 #ifdef _WIN32
     REQUIRE(simplified_chinese.contains(QStringLiteral("# Windows 说明")));
 #endif
+
+    TranslationManager::instance().set_language(Language::Russian);
+    const QString russian = MainAppHelpActions::quick_start_markdown_for_language(
+        TranslationManager::instance().current_language());
+    REQUIRE(russian.contains(QStringLiteral("# Краткое руководство")));
+    REQUIRE(russian.contains(QStringLiteral("Выберите папку")));
+#ifdef _WIN32
+    REQUIRE(russian.contains(QStringLiteral("# Примечания для Windows")));
+#endif
 }
 
 TEST_CASE("What's New content is packaged for the current app version")
@@ -804,6 +844,7 @@ TEST_CASE("What's New content is packaged for the current app version")
         Language::Norwegian,
         Language::Finnish,
         Language::Danish,
+        Language::Russian,
     };
 
     for (const Language language : localized_languages) {
@@ -969,7 +1010,8 @@ TEST_CASE("Simplified Chinese interface language action label is translated for 
         {Language::Dutch, QStringLiteral("&Vereenvoudigd Chinees")},
         {Language::Turkish, QStringLiteral("&Basitleştirilmiş Çince")},
         {Language::Korean, QStringLiteral("&중국어 간체")},
-        {Language::SimplifiedChinese, QStringLiteral("&简体中文")}
+        {Language::SimplifiedChinese, QStringLiteral("&简体中文")},
+        {Language::Russian, QStringLiteral("&Упрощенный китайский")}
     };
 
     for (const auto& entry : expected) {
@@ -1104,7 +1146,11 @@ TEST_CASE("Quick Start and FAQ help labels are translated for all supported UI l
         {Language::SimplifiedChinese,
          QStringLiteral("&快速入门指南"),
          QStringLiteral("&FAQ"),
-         QStringLiteral("快速入门指南")}
+         QStringLiteral("快速入门指南")},
+        {Language::Russian,
+         QStringLiteral("&Краткое руководство"),
+         QStringLiteral("&FAQ"),
+         QStringLiteral("Краткое руководство")}
     };
 
     for (const auto& entry : expected) {

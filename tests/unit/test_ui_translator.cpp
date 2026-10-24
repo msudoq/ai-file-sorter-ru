@@ -116,6 +116,7 @@ struct UiTranslatorTestHarness {
     QAction* spanish_action = new QAction(&window);
     QAction* turkish_action = new QAction(&window);
     QAction* korean_action = new QAction(&window);
+    QAction* russian_action = new QAction(&window);
     UiTranslator::CategoryLanguageActionArray category_language_actions{};
     QAction* about_action = new QAction(&window);
     QAction* quick_start_action = new QAction(&window);
@@ -201,6 +202,7 @@ struct UiTranslatorTestHarness {
         language_group->addAction(spanish_action);
         language_group->addAction(turkish_action);
         language_group->addAction(korean_action);
+        language_group->addAction(russian_action);
 
         language_menu->addAction(dutch_action);
         language_menu->addAction(english_action);
@@ -217,6 +219,7 @@ struct UiTranslatorTestHarness {
         language_menu->addAction(danish_action);
         language_menu->addAction(spanish_action);
         language_menu->addAction(turkish_action);
+        language_menu->addAction(russian_action);
     }
 
     void setup_category_language_actions()
@@ -318,6 +321,7 @@ struct UiTranslatorTestHarness {
                 spanish_action,
                 turkish_action,
                 korean_action,
+                russian_action,
                 about_action,
                 quick_start_action,
                 faq_action,
@@ -340,7 +344,8 @@ struct UiTranslatorTestHarness {
                 danish_action,
                 spanish_action,
                 turkish_action,
-                korean_action},
+                korean_action,
+                russian_action},
             .category_language = UiTranslator::CategoryLanguageControls{
                 category_language_group,
                 &category_language_actions},
