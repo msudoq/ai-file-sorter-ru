@@ -26,7 +26,7 @@ struct QuickStartLanguageSuffix {
     const char* suffix;
 };
 
-constexpr std::array<QuickStartLanguageSuffix, 14> kQuickStartLanguageSuffixes{{
+constexpr std::array<QuickStartLanguageSuffix, 15> kQuickStartLanguageSuffixes{{
     {Language::Dutch, "_nl"},
     {Language::Swedish, "_sv"},
     {Language::Icelandic, "_is"},
@@ -41,6 +41,7 @@ constexpr std::array<QuickStartLanguageSuffix, 14> kQuickStartLanguageSuffixes{{
     {Language::Turkish, "_tr"},
     {Language::Korean, "_ko"},
     {Language::SimplifiedChinese, "_zh_cn"},
+    {Language::Russian, "_ru"},
 }};
 
 QString support_page_url_string()

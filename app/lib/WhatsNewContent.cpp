@@ -12,7 +12,7 @@ struct WhatsNewLanguageSuffix {
     const char* suffix;
 };
 
-constexpr std::array<WhatsNewLanguageSuffix, 14> kWhatsNewLanguageSuffixes{{
+constexpr std::array<WhatsNewLanguageSuffix, 15> kWhatsNewLanguageSuffixes{{
     {Language::Dutch, "_nl"},
     {Language::Swedish, "_sv"},
     {Language::Icelandic, "_is"},
@@ -27,6 +27,7 @@ constexpr std::array<WhatsNewLanguageSuffix, 14> kWhatsNewLanguageSuffixes{{
     {Language::Turkish, "_tr"},
     {Language::Korean, "_ko"},
     {Language::SimplifiedChinese, "_zh_cn"},
+    {Language::Russian, "_ru"},
 }};
 
 QString sanitized_version(const QString& version)
